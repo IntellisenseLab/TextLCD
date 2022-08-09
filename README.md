@@ -1,6 +1,13 @@
 # TextLCD
 
-Updated [Simon Ford/TextLCD](https://os.mbed.com/users/simon/code/TextLCD/) library to support for the MbedOS 6.9.0 API
+Updated [Simon Ford/TextLCD](https://os.mbed.com/users/simon/code/TextLCD/) library to support for the MbedOS 6.9.0 API. Tested using PlatformIO Core 6.1.3.
+
+## Importing
+
+Add the following line to platformio.ini
+```sh
+lib_deps = https://github.com/KalanaRatnayake/TextLCD
+```
 
 ## Example 
 ```sh
@@ -19,3 +26,5 @@ int main()
     }
 }
 ```
+
+<br>
