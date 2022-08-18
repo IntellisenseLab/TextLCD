@@ -17,7 +17,7 @@ int main()
 
     lcd.display("oneline", 2000000);
     
-    lcd.display("fistline", "secondline", 2000000);
+    lcd.display("firstline", "secondline", 2000000);
 
     while(1)
     {

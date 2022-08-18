@@ -91,7 +91,7 @@ public:
     /** Print single line on 1602 screen
      *
      * @param line16Char   The upper row character array. need to be 16 char or less
-     * @param usTime            Display time in microseconds
+     * @param usTime       Display time in microseconds
      */
     int display(const char *line16Char, int usTime);
 
