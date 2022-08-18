@@ -15,7 +15,9 @@ int main()
 {
     TextLCD	lcd(PE_2, PE_3, PE_4, PE_5, PE_6, PC_13, TextLCD::LCD16x2);
 
-    lcd.display("example", "complete", 2000000);
+    lcd.display("oneline", 2000000);
+    
+    lcd.display("fistline", "secondline", 2000000);
 
     while(1)
     {

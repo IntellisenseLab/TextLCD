@@ -158,6 +158,13 @@ int TextLCD::rows() {
     }
 }
 
+int TextLCD::display(const char *line16Char, int usTime)
+{
+    locate(0,0);
+	printf(line16Char);
+    wait_us(usTime);
+}
+
 int TextLCD::display(const char *firstline16Char, const char *secondline16Char, int usTime)
 {
     locate(0,0);
