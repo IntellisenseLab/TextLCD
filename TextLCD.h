@@ -88,6 +88,14 @@ public:
     int rows();
     int columns();
 
+    /** Print on 1602 screen
+     *
+     * @param firstline16Char   The upper row character array. need to be 16 char or less
+     * @param secondline16Char  The lower row character array. need to be 16 char or less
+     * @param usTime            Display time in microseconds
+     */
+    int display(const char *firstline16Char, const char *secondline16Char, int usTime);
+
 protected:
 
     // Stream implementation functions
