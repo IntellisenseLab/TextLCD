@@ -93,7 +93,7 @@ public:
      * @param line16Char   The upper row character array. need to be 16 char or less
      * @param usTime       Display time in microseconds
      */
-    int display(const char *line16Char, int usTime);
+    void display(const char *line16Char, int usTime);
 
     /** Print two lines on 1602 screen
      *
@@ -101,7 +101,7 @@ public:
      * @param secondline16Char  The lower row character array. need to be 16 char or less
      * @param usTime            Display time in microseconds
      */
-    int display(const char *firstline16Char, const char *secondline16Char, int usTime);
+    void display(const char *firstline16Char, const char *secondline16Char, int usTime);
 
 protected:
 
