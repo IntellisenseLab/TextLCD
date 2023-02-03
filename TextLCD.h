@@ -115,7 +115,7 @@ protected:
     void writeCommand(int command);
     void writeData(int data);
 
-    DigitalOut _rs, _e;
+    DigitalOut _rs, _e, _backupLED;
     BusOut _d;
     LCDType _type;
 
