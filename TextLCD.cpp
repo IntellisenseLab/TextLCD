@@ -24,8 +24,8 @@
 #include "mbed.h"
 
 TextLCD::TextLCD(PinName rs, PinName e, PinName d4, PinName d5,
-                 PinName d6, PinName d7, PinName backupLED, LCDType type) : _rs(rs),
-        _e(e), _d(d4, d5, d6, d7), _backupLED(backupLED),
+                 PinName d6, PinName d7, LCDType type) : _rs(rs),
+        _e(e), _d(d4, d5, d6, d7),
         _type(type) {
 
     _e  = 1;
@@ -160,20 +160,16 @@ int TextLCD::rows() {
 
 void TextLCD::display(const char *line16Char, int usTime)
 {
-    _backupLED.write(1);
     locate(0,0);
 	printf(line16Char);
     wait_us(usTime);
-    _backupLED.write(0);
 }
 
 void TextLCD::display(const char *firstline16Char, const char *secondline16Char, int usTime)
 {
-    _backupLED.write(1);
     locate(0,0);
 	printf(firstline16Char);
 	locate(0,1);
 	printf(secondline16Char);
     wait_us(usTime);
-    _backupLED.write(0);
 }
